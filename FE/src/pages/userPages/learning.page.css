@@ -1,0 +1,254 @@
+.learning-page-container {
+    padding: 20px;
+    min-width: 100%;
+    margin: 80px auto;
+}
+
+.content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 5px solid #000000; */
+    border-radius: 8px;
+    background-color: rgb(79 94 143 / 78%);
+    position: relative;
+    min-height: 650px;
+}
+
+.result-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #262624;
+    border-radius: 8px;
+    background-color: #e2e3d8c4;
+    color: rgb(0, 0, 0);
+    position: relative;
+    min-height: 550px;
+
+    /* Flexbox cho căn giữa */
+    display: flex;
+    flex-direction: column;
+    /* Sắp xếp các phần tử theo cột */
+    justify-content: center;
+    /* Căn giữa theo chiều dọc */
+    align-items: center;
+    /* Căn giữa theo chiều ngang */
+
+    /* Thêm text căn giữa */
+    text-align: center;
+}
+
+
+.question-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 100px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    white-space: pre-wrap;
+    /* Giữ nguyên ngắt dòng và khoảng trắng */
+    word-break: break-word;
+    /* Cho phép ngắt từ nếu quá dài */
+}
+
+.answer-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+.answer-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    height: auto;
+    background: #00000073;
+    border-color: #d9d9d900;
+    color: rgb(231, 226, 226);
+    font-weight: 500;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+    flex: 0 1 calc(50% - 15px);
+    /* Ensure each answer takes up half the container width, minus the gap */
+    box-sizing: border-box;
+    max-width: 300px;
+    /* Adjust the maximum width to shrink the button length */
+}
+
+.answer-setting img {
+    max-width: 100%;
+    max-height: 100px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    /* Giữ nguyên tỷ lệ ảnh */
+    border-radius: 4px;
+    /* Bo góc ảnh */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.answer-setting span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    /* Màu chữ */
+}
+
+.answer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.answer-text {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.answer-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 8px;
+    /* Adjust the spacing as needed */
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.correct-answer,
+.wrong-answer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.correct-answer {
+    background-color: #52c41a;
+    color: white;
+}
+
+.wrong-answer {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.submit-button {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #6fb8f9;
+    transform: scale(1.05);
+}
+
+
+/*collapse*/
+.ant-collapse-header {
+    background-color: #bfc5d1;
+    /* Light grey background */
+    color: #000;
+    /* Black text color */
+    font-weight: bold;
+    /* Bold text */
+    border-radius: 8px 0 0 0;
+}
+
+/* Style for the disabled Collapse panels */
+.ant-collapse-item-disabled .ant-collapse-header {
+    background-color: rgb(191, 197, 209);
+    /* Slightly darker grey background */
+    color: #a0a0a0;
+    /* Grey text color */
+    border-radius: 0px;
+}
+
+/* Style for the lesson items */
+.lesson-item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    /* Light border */
+}
+
+.lesson-item:hover {
+    background-color: #e6f7ff;
+    /* Light blue background on hover */
+}
+
+/* Style for the selected lesson */
+.selected-lesson {
+    background-color: #bae7ff;
+    /* Darker blue background */
+}
+
+/* Style for the icons */
+.anticon {
+    font-size: 16px;
+}
+
+/* Style for completed lessons */
+.lesson-item .anticon-check-circle {
+    color: green;
+}
+
+/* Style for locked lessons */
+.lesson-item .anticon-lock {
+    color: rgba(221, 47, 47, 0.952);
+}
+
+/* Chỉ báo số trang */
+.page-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    background-color: #000000;
+    /* Nền tối */
+    color: #ffffff;
+    /* Chữ sáng */
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.congratulation .react-lottie {
+    position: absolute;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 500px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.congratulation .trumpet-left {
+    position: absolute;
+    left: calc(30% - 300px);
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.congratulation .trumpet-right {
+    position: absolute;
+    right: calc(30% - 300px);
+    top: 70%;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-collapse .ant-collapse-content>.ant-collapse-content-box {
+    padding: 0px;
+}

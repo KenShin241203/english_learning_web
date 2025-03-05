@@ -1,0 +1,39 @@
+{
+  "name": "quizz_website",
+  "version": "1.0.0",
+  "description": "do an chuyen nganh",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/KenShin241203/Qizz_Website.git)"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Michael Dinh",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
+    "api-query-params": "5.4.0",
+    "axios": "1.7.7",
+    "bcryptjs": "2.4.3",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "ejs": "3.1.8",
+    "express": "4.18.2",
+    "express-fileupload": "1.4.0",
+    "joi": "17.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "2.30.1",
+    "mongoose": "6.7.2",
+    "mongoose-delete": "1.0.2",
+    "nodemailer": "6.9.16"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}

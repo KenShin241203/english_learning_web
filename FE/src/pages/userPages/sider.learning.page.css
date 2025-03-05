@@ -1,0 +1,75 @@
+.header-learning-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    color: #fff;
+    height: 70px;
+    padding: 0;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.back-icon-container {
+    background: #000;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-icon {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.token-points {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #ffa500;
+    /* Adjust color as needed */
+}
+
+.token-points .fa-coins {
+    margin-right: 5px;
+}
+
+.header-learning-page .ant-progress-circle {
+    width: 60px;
+    height: 60px;
+}
+
+.trophy-icon {
+    font-size: 15px;
+    color: #faad14;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-text {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.progress-text:hover {
+    color: rgb(255, 255, 255);
+}

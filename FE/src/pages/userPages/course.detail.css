@@ -1,0 +1,120 @@
+/* Overall page container */
+.course-detail-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 100px;
+    max-width: 100%;
+    margin: 80px 0 0 0;
+    gap: 20px;
+    height: auto;
+}
+
+/* Column styling */
+.left-column {
+    text-align: center;
+    position: sticky;
+    top: 100px;
+    /* Distance from the top when it becomes sticky */
+    width: 100%;
+    max-width: 250px;
+    /* Set max width if desired */
+    align-self: flex-start;
+    /* Keeps it aligned to the top of the right column */
+}
+
+/* Right column: content and scrollable section */
+.right-column {
+    overflow-y: auto;
+    /* Enable vertical scrolling for the right column */
+    padding-left: 20px;
+    flex: 1;
+    /* Take up remaining space */
+}
+
+/* Course image */
+.course-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Course title */
+.course-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Rating label text */
+.rating-label {
+    cursor: pointer;
+    color: #1890ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.rating-label:hover {
+    color: #40a9ff;
+}
+
+/* Join button styling */
+.join-button {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    margin-top: 10px;
+}
+
+/* Course description */
+.course-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Chapter list title */
+.chapter-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Collapse and list styles */
+.ant-collapse-header {
+    font-weight: bold;
+}
+
+.lesson-list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.lesson-list-item:last-child {
+    border-bottom: none;
+}
+
+.requirements-section {
+    background-color: #fff;
+    /* Dark grey background */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.requirements-title {
+    color: #000000;
+    /* White text color for the title */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.requirements-description {
+    color: #000000;
+    /* Light grey color for the description text */
+    font-size: 16px;
+    line-height: 1.5;
+}

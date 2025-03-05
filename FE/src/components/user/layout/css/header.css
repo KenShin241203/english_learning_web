@@ -1,0 +1,129 @@
+.header-fixed {
+    padding: 0;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url('../../../../../public/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+.token-points {
+    font-family: nunito;
+}
+
+.title-direct {
+    font-size: 500;
+    font-family: nunito;
+}
+
+.menu-mobile-button {
+    display: none;
+}
+
+.ant-drawer-header {
+    background-color: #001529;
+    color: white;
+}
+
+.ant-drawer-title {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-mobile-button {
+        display: inline-block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .ant-menu-horizontal {
+        display: none;
+    }
+}
+
+.ant-menu-inline .ant-menu-item {
+    padding: 10px;
+}
+
+.ant-drawer-content {
+    background-color: #f0f2f5;
+}
+
+.carousel-container {
+    overflow: hidden;
+    background: #fff;
+    padding: 0;
+    margin: 85px auto;
+    width: 100%;
+    max-width: 1300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-slide .slick-dots li button {
+    background-color: #1890ff;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-description {
+    font-size: 18px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+
+.package-div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.package-div:hover {
+    background-color: #f0f0f0;
+}
+
+.package-div.selected {
+    background-color: #e6f7ff;
+    border-color: #1890ff;
+}

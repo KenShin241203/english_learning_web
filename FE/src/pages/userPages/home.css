@@ -1,0 +1,136 @@
+/* Menu mini Dark Mode */
+.dark-mode-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/* Add these new styles to your home.css file */
+
+/* Ensure all cards have the same size */
+.course-card {
+    width: 300px;
+    /* Set the desired width */
+    height: auto;
+    /* Set the desired height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -10px;
+    /* Makes sure the content is spaced evenly */
+}
+
+.card-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container .carousel-slide .carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-btn.left {
+    left: -15px;
+    /* Adjust as needed */
+}
+
+.arrow-btn.right {
+    right: -15px;
+    /* Adjust as needed */
+}
+
+.card-row {
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+/* Style for the images to fit within the card */
+.course-card img {
+    width: 100px;
+    height: 200px;
+    /* Set image height to fit within the card */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
+    border-radius: 8px;
+    /* Maintain the same border-radius */
+}
+
+.default-image-size {
+    width: 100%;
+    /* Adjust as needed */
+    height: 160px;
+    /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Biểu tượng bánh răng */
+button.ant-btn.ant-btn-text {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .ant-card {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+}
+
+.dark-mode .ant-card-meta-title {
+    color: #ffffff;
+}
+
+.dark-mode .ant-card-meta-description {
+    color: #cccccc;
+}
+
+.dark-mode .ant-rate-star-full {
+    color: #ffcc00;
+}
+
+.dark-mode .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+@font-face {
+    font-family: anton;
+    src: url(../../../public/fonts/AntonSC-Regular.ttf);
+}
+
+.title-course {
+    font-family: anton;
+}

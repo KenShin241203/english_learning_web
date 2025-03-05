@@ -1,0 +1,80 @@
+/* HomePage.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ccc8c8;
+}
+
+
+/* CSS cho Button menu trên mobile */
+.menu-mobile-button {
+    display: none;
+    /* Ẩn trên desktop */
+}
+
+/* CSS cho Drawer */
+.ant-drawer-header {
+    background-color: #001529;
+    color: white;
+}
+
+.ant-drawer-title {
+    color: white;
+}
+
+/* Media query để hiển thị nút menu chỉ trên thiết bị nhỏ */
+@media (max-width: 768px) {
+    .menu-mobile-button {
+        display: inline-block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .ant-menu-horizontal {
+        display: none;
+        /* Ẩn Menu trên màn hình nhỏ */
+    }
+}
+
+/* Tùy chỉnh các item menu trong Drawer */
+.ant-menu-inline .ant-menu-item {
+    padding: 10px;
+}
+
+/* Cải thiện Drawer style */
+.ant-drawer-content {
+    background-color: #f0f2f5;
+}
+
+
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}

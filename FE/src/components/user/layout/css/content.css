@@ -1,0 +1,90 @@
+.content-container {
+    min-height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.title-label {
+    position: relative;
+    right: -8px;
+    top: -6px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 3px 6px;
+    background-color: #1473e6;
+}
+
+.content-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content-text {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.layout-content {
+    background-color: #fff;
+    /* margin-top: 30px; */
+
+}
+
+/* Adjust Card Size and add Margin for Spacing */
+.content-container .ant-card {
+    max-width: 100%;
+    /* Make card smaller */
+    background-color: #f0f2f5;
+    margin: 50px 20px;
+    /* Add margin around each card */
+    padding: 10px;
+    /* Adjust padding inside the card */
+}
+
+.content-container .ant-row {
+    justify-content: start;
+    padding: 20px;
+    width: 100%;
+    /* Align cards to the left */
+}
+
+
+.col-centered {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    height: 100%;
+    /* Đảm bảo cột có chiều cao để căn giữa theo chiều dọc */
+}
+
+.title-container {
+    text-align: center;
+    margin: 50px 0 -60px 20px;
+    width: 100%;
+    justify-items: start;
+    /* Khoảng cách dưới */
+}
+
+.title-course {
+    font-size: 24px;
+    font-weight: 900;
+    color: #333;
+    padding: 0;
+}
+
+.card-container {
+    background: #fff;
+    padding: 24px;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
