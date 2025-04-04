@@ -7,7 +7,7 @@ const questionSchema = new mongoose.Schema({
     translation: String,
     lessonId: { type: mongoose.Schema.Types.ObjectId, ref: 'lesson' },
     testId: { type: mongoose.Schema.Types.ObjectId, ref: 'test' },
-    type: { type: String, enum: ['multiple_choice', 'word_order'], default: 'multiple_choice' }, // Loại câu hỏi
+    type: { type: String, enum: ['multiple_choice', 'word_order', 'toeic'], default: 'multiple_choice' }, // Loại câu hỏi
     wordBank: { type: [String], default: [] },
     answerInfo: [{ type: mongoose.Schema.Types.ObjectId, ref: 'answer' }]
 })

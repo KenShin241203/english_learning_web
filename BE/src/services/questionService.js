@@ -43,7 +43,12 @@ const createQuestionForLessonService = async (questions) => {
             if (!translation || !wordBank || wordBank.length === 0) {
                 throw new Error('Word order questions must have translation and word bank.');
             }
-        } else {
+        } else if (type === 'toeic') {
+            if (!description) {
+                throw new Error('Toeic questions must have a description.');
+            }
+        }
+        else {
             throw new Error(`Unsupported question type: ${type}`);
         }
 
